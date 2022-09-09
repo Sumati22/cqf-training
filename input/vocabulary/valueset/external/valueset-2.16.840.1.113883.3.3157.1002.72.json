@@ -1,0 +1,124 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.3.3157.1002.72",
+  "meta": {
+    "profile": [ "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablevalueset", "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset", "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablevalueset" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode": "shareable"
+  }, {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode": "narrative"
+  }, {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode": "publishable"
+  }, {
+    "url": "http://fhir.org/guides/cdc/opioid-cds/StructureDefinition/cdc-valueset-inclusion",
+    "valueString": "Includes concepts that identify a medication for meperidine."
+  }, {
+    "url": "http://fhir.org/guides/cdc/opioid-cds/StructureDefinition/cdc-valueset-exclusion",
+    "valueString": "Excludes concepts that represent schedule I, unscheduled, nonprescribable, non-human, and inactive meperidine medications."
+  }, {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode": "executable"
+  }, {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode": "executable"
+  }, {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-usageWarning",
+    "valueString": "This value set contains a point-in-time expansion enumerating the codes that meet the value set intent. As new versions of the code systems used by the value set are released, the contents of this expansion will need to be updated to incorporate newly defined codes that meet the value set intent. Before, and periodically during production use, the value set expansion contents SHOULD be updated. The value set expansion specifies the timestamp when the expansion was produced, SHOULD contain the parameters used for the expansion, and SHALL contain the codes that are obtained by evaluating the value set definition. If this is ONLY an executable value set, a distributable definition of the value set must be obtained to compute the updated expansion."
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3157.1002.72",
+  "version": "20210223",
+  "title": "Meperidine",
+  "status": "active",
+  "experimental": false,
+  "publisher": "Mathematica",
+  "description": "The purpose of this value set is to represent concepts for medications that are Schedules II and III meperidine medications.",
+  "purpose": "This value set may use a model element related to Medication.",
+  "expansion": {
+    "timestamp": "2021-09-25T13:36:18-06:00",
+    "contains": [ {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2021-09",
+      "code": "1665685",
+      "display": "1 ML meperidine hydrochloride 100 MG/ML Injection"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2021-09",
+      "code": "1665690",
+      "display": "1.5 ML meperidine hydrochloride 50 MG/ML Injection"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2021-09",
+      "code": "1665697",
+      "display": "1 ML meperidine hydrochloride 50 MG/ML Injection"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2021-09",
+      "code": "1665699",
+      "display": "0.5 ML meperidine hydrochloride 50 MG/ML Injection"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2021-09",
+      "code": "1665701",
+      "display": "2 ML meperidine hydrochloride 50 MG/ML Injection"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2021-09",
+      "code": "860792",
+      "display": "1 ML meperidine hydrochloride 75 MG/ML Cartridge"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2021-09",
+      "code": "861447",
+      "display": "meperidine hydrochloride 10 MG/ML Injectable Solution"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2021-09",
+      "code": "861455",
+      "display": "meperidine hydrochloride 100 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2021-09",
+      "code": "861459",
+      "display": "meperidine hydrochloride 100 MG/ML Injectable Solution"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2021-09",
+      "code": "861463",
+      "display": "meperidine hydrochloride 50 MG/ML Injectable Solution"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2021-09",
+      "code": "861467",
+      "display": "meperidine hydrochloride 50 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2021-09",
+      "code": "861473",
+      "display": "1 ML meperidine hydrochloride 50 MG/ML Cartridge"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2021-09",
+      "code": "861476",
+      "display": "1 ML meperidine hydrochloride 25 MG/ML Injection"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2021-09",
+      "code": "861479",
+      "display": "meperidine hydrochloride 10 MG/ML Oral Solution"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2021-09",
+      "code": "861493",
+      "display": "1 ML meperidine hydrochloride 100 MG/ML Cartridge"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2021-09",
+      "code": "861494",
+      "display": "1 ML meperidine hydrochloride 25 MG/ML Cartridge"
+    } ]
+  }
+}

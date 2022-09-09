@@ -1,0 +1,41 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.3.464.1003.196.12.1331",
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.196.12.1331",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "2.16.840.1.113883.3.464.1003.196.12.1331"
+  } ],
+  "version": "20170504",
+  "name": "Methyldopa",
+  "title": "Methyldopa",
+  "status": "active",
+  "experimental": false,
+  "publisher": "NLM",
+  "description": "Codes representing possible values for Methyldopa",
+  "expansion": {
+    "identifier": "20210506",
+    "timestamp": "2021-10-04T08:26:11-07:00",
+    "contains": [ {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2021-01",
+      "code": "197956",
+      "display": "methyldopa 250 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2021-01",
+      "code": "197958",
+      "display": "methyldopa 500 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2021-01",
+      "code": "197960",
+      "display": "hydrochlorothiazide 25 MG / methyldopa 250 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2021-01",
+      "code": "197963",
+      "display": "hydrochlorothiazide 15 MG / methyldopa 250 MG Oral Tablet"
+    } ]
+  }
+}

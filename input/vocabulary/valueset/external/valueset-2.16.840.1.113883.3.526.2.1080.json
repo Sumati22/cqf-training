@@ -1,0 +1,134 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.3.526.2.1080",
+  "meta": {
+    "profile": [ "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablevalueset", "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset", "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablevalueset" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode": "shareable"
+  }, {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode": "narrative"
+  }, {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode": "publishable"
+  }, {
+    "url": "http://fhir.org/guides/cdc/opioid-cds/StructureDefinition/cdc-valueset-inclusion",
+    "valueString": "Includes concepts that represent a procedure for chemotherapy administration."
+  }, {
+    "url": "http://fhir.org/guides/cdc/opioid-cds/StructureDefinition/cdc-valueset-exclusion",
+    "valueString": "Excludes concepts that describe a procedure for topical chemotherapy."
+  }, {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode": "executable"
+  }, {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode": "executable"
+  }, {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-usageWarning",
+    "valueString": "This value set contains a point-in-time expansion enumerating the codes that meet the value set intent. As new versions of the code systems used by the value set are released, the contents of this expansion will need to be updated to incorporate newly defined codes that meet the value set intent. Before, and periodically during production use, the value set expansion contents SHOULD be updated. The value set expansion specifies the timestamp when the expansion was produced, SHOULD contain the parameters used for the expansion, and SHALL contain the codes that are obtained by evaluating the value set definition. If this is ONLY an executable value set, a distributable definition of the value set must be obtained to compute the updated expansion."
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.1080",
+  "version": "20200306",
+  "title": "Chemotherapy Administration",
+  "status": "active",
+  "experimental": false,
+  "publisher": "American Society of Clinical Oncology",
+  "description": "The purpose of this value set is to represent concepts for the procedure of chemotherapy administration.",
+  "purpose": "This value set may use a model element related to Procedure.",
+  "expansion": {
+    "timestamp": "2021-10-07T12:05:16-07:00",
+    "contains": [ {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "version": "2021",
+      "code": "51720",
+      "display": "Bladder instillation of anticarcinogenic agent (including retention time)"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "version": "2021",
+      "code": "96401",
+      "display": "Chemotherapy administration, subcutaneous or intramuscular; non-hormonal anti-neoplastic"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "version": "2021",
+      "code": "96405",
+      "display": "Chemotherapy administration; intralesional, up to and including 7 lesions"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "version": "2021",
+      "code": "96406",
+      "display": "Chemotherapy administration; intralesional, more than 7 lesions"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "version": "2021",
+      "code": "96409",
+      "display": "Chemotherapy administration; intravenous, push technique, single or initial substance/drug"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "version": "2021",
+      "code": "96413",
+      "display": "Chemotherapy administration, intravenous infusion technique; up to 1 hour, single or initial substance/drug"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "version": "2021",
+      "code": "96416",
+      "display": "Chemotherapy administration, intravenous infusion technique; initiation of prolonged chemotherapy infusion (more than 8 hours), requiring use of a portable or implantable pump"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "version": "2021",
+      "code": "96420",
+      "display": "Chemotherapy administration, intra-arterial; push technique"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "version": "2021",
+      "code": "96422",
+      "display": "Chemotherapy administration, intra-arterial; infusion technique, up to 1 hour"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "version": "2021",
+      "code": "96425",
+      "display": "Chemotherapy administration, intra-arterial; infusion technique, initiation of prolonged infusion (more than 8 hours), requiring the use of a portable or implantable pump"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "version": "2021",
+      "code": "96440",
+      "display": "Chemotherapy administration into pleural cavity, requiring and including thoracentesis"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "version": "2021",
+      "code": "96446",
+      "display": "Chemotherapy administration into the peritoneal cavity via indwelling port or catheter"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "version": "2021",
+      "code": "96450",
+      "display": "Chemotherapy administration, into CNS (eg, intrathecal), requiring and including spinal puncture"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "version": "2021",
+      "code": "96521",
+      "display": "Refilling and maintenance of portable pump"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "version": "2021",
+      "code": "96522",
+      "display": "Refilling and maintenance of implantable pump or reservoir for drug delivery, systemic (eg, intravenous, intra-arterial)"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "version": "2021",
+      "code": "96523",
+      "display": "Irrigation of implanted venous access device for drug delivery systems"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "version": "2021",
+      "code": "96542",
+      "display": "Chemotherapy injection, subarachnoid or intraventricular via subcutaneous reservoir, single or multiple agents"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "version": "2021",
+      "code": "96549",
+      "display": "Unlisted chemotherapy procedure"
+    } ]
+  }
+}

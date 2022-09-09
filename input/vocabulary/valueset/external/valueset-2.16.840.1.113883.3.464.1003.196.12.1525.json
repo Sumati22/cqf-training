@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.3.464.1003.196.12.1525",
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.196.12.1525",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "2.16.840.1.113883.3.464.1003.196.12.1525"
+  } ],
+  "version": "20210224",
+  "name": "Methscopolamine",
+  "title": "Methscopolamine",
+  "status": "active",
+  "experimental": false,
+  "publisher": "NLM",
+  "description": "Codes representing possible values for Methscopolamine",
+  "expansion": {
+    "identifier": "20210506",
+    "timestamp": "2021-10-04T08:26:11-07:00",
+    "contains": [ {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2021-01",
+      "code": "314088",
+      "display": "methscopolamine bromide 2.5 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "2021-01",
+      "code": "403914",
+      "display": "methscopolamine bromide 5 MG Oral Tablet"
+    } ]
+  }
+}

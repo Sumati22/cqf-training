@@ -1,0 +1,64 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.3.526.2.1071",
+  "meta": {
+    "profile": [ "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablevalueset", "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset", "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablevalueset" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode": "shareable"
+  }, {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode": "narrative"
+  }, {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode": "publishable"
+  }, {
+    "url": "http://fhir.org/guides/cdc/opioid-cds/StructureDefinition/cdc-valueset-inclusion",
+    "valueString": "Includes concepts that represent a procedure for radiation treatment management."
+  }, {
+    "url": "http://fhir.org/guides/cdc/opioid-cds/StructureDefinition/cdc-valueset-exclusion",
+    "valueString": "No exclusions."
+  }, {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode": "executable"
+  }, {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode": "executable"
+  }, {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-usageWarning",
+    "valueString": "This value set contains a point-in-time expansion enumerating the codes that meet the value set intent. As new versions of the code systems used by the value set are released, the contents of this expansion will need to be updated to incorporate newly defined codes that meet the value set intent. Before, and periodically during production use, the value set expansion contents SHOULD be updated. The value set expansion specifies the timestamp when the expansion was produced, SHOULD contain the parameters used for the expansion, and SHALL contain the codes that are obtained by evaluating the value set definition. If this is ONLY an executable value set, a distributable definition of the value set must be obtained to compute the updated expansion."
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.1071",
+  "version": "20170826",
+  "title": "Radiation Treatment Management",
+  "status": "active",
+  "experimental": false,
+  "publisher": "American Society of Clinical Oncology",
+  "description": "The purpose of this value set is to represent concepts for the procedure of radiation management.",
+  "purpose": "This value set may use a model element related to Procedure.",
+  "expansion": {
+    "timestamp": "2021-10-07T12:07:17-07:00",
+    "contains": [ {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "version": "2021",
+      "code": "77427",
+      "display": "Radiation treatment management, 5 treatments"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "version": "2021",
+      "code": "77431",
+      "display": "Radiation therapy management with complete course of therapy consisting of 1 or 2 fractions only"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "version": "2021",
+      "code": "77432",
+      "display": "Stereotactic radiation treatment management of cranial lesion(s) (complete course of treatment consisting of 1 session)"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "version": "2021",
+      "code": "77435",
+      "display": "Stereotactic body radiation therapy, treatment management, per treatment course, to 1 or more lesions, including image guidance, entire course not to exceed 5 fractions"
+    } ]
+  }
+}

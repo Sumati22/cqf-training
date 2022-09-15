@@ -1,0 +1,170 @@
+{
+  "resourceType": "MeasureReport",
+  "id": "CMS68-patient-1-expectedresults",
+  "contained": [ {
+    "resourceType": "Observation",
+    "id": "0a675ec9-9361-40ee-a0d2-4c57bfb44b46",
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-measureInfo",
+      "extension": [ {
+        "url": "measure",
+        "valueCanonical": "http://content.alphora.com/fhir/dqm/Measure/CMS68"
+      }, {
+        "url": "populationId",
+        "valueString": "sde-race"
+      } ]
+    } ],
+    "status": "final",
+    "code": {
+      "text": "sde-race"
+    },
+    "valueCodeableConcept": {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/PHRaceAndEthnicityCDC",
+        "code": "2106-3",
+        "display": "White"
+      } ]
+    }
+  }, {
+    "resourceType": "Observation",
+    "id": "8d920ab8-d9a7-4742-b25f-6b96bd3d9a86",
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-measureInfo",
+      "extension": [ {
+        "url": "measure",
+        "valueCanonical": "http://content.alphora.com/fhir/dqm/Measure/CMS68"
+      }, {
+        "url": "populationId",
+        "valueString": "sde-payer"
+      } ]
+    } ],
+    "status": "final",
+    "code": {
+      "text": "sde-payer"
+    },
+    "valueCodeableConcept": {
+      "coding": [ {
+        "system": "https://nahdo.org/sopt",
+        "code": "31",
+        "display": "Department of Defense"
+      } ]
+    }
+  }, {
+    "resourceType": "Observation",
+    "id": "bdc4cfea-d407-4232-965f-a1f6edac7de6",
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-measureInfo",
+      "extension": [ {
+        "url": "measure",
+        "valueCanonical": "http://content.alphora.com/fhir/dqm/Measure/CMS68"
+      }, {
+        "url": "populationId",
+        "valueString": "sde-ethnicity"
+      } ]
+    } ],
+    "status": "final",
+    "code": {
+      "text": "sde-ethnicity"
+    },
+    "valueCodeableConcept": {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/PHRaceAndEthnicityCDC",
+        "code": "2135-2",
+        "display": "Hispanic or Latino"
+      } ]
+    }
+  }, {
+    "resourceType": "Observation",
+    "id": "82ce8f2a-dbb3-4d55-91f9-36cc467a2a5c",
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-measureInfo",
+      "extension": [ {
+        "url": "measure",
+        "valueCanonical": "http://content.alphora.com/fhir/dqm/Measure/CMS68"
+      }, {
+        "url": "populationId",
+        "valueString": "sde-sex"
+      } ]
+    } ],
+    "status": "final",
+    "code": {
+      "text": "sde-sex"
+    },
+    "valueCodeableConcept": {
+      "coding": [ {
+        "code": "M"
+      } ]
+    }
+  } ],
+  "status": "complete",
+  "type": "individual",
+  "measure": "http://content.alphora.com/fhir/dqm/Measure/CMS68",
+  "subject": {
+    "reference": "Patient/CMS68-patient-1"
+  },
+  "period": {
+    "start": "2020-01-01T00:00:00-07:00",
+    "end": "2020-12-31T00:00:00-07:00"
+  },
+  "group": [ {
+    "id": "group-1",
+    "population": [ {
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "initial-population",
+          "display": "Initial Population"
+        } ]
+      },
+      "count": 0
+    }, {
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "numerator",
+          "display": "Numerator"
+        } ]
+      },
+      "count": 0
+    }, {
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "denominator",
+          "display": "Denominator"
+        } ]
+      },
+      "count": 0
+    }, {
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "denominator-exception",
+          "display": "Denominator Exception"
+        } ]
+      },
+      "count": 0
+    } ]
+  } ],
+  "evaluatedResource": [ {
+    "reference": "#0a675ec9-9361-40ee-a0d2-4c57bfb44b46"
+  }, {
+    "reference": "#8d920ab8-d9a7-4742-b25f-6b96bd3d9a86"
+  }, {
+    "reference": "#bdc4cfea-d407-4232-965f-a1f6edac7de6"
+  }, {
+    "reference": "#82ce8f2a-dbb3-4d55-91f9-36cc467a2a5c"
+  }, {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-populationReference",
+      "valueString": "initial-population"
+    } ],
+    "reference": "Patient/CMS68-patient-1"
+  }, {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-populationReference",
+      "valueString": "initial-population"
+    } ],
+    "reference": "Encounter/CMS68-patient-1-encounter-1"
+  } ]
+}

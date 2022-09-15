@@ -1,0 +1,46 @@
+{
+  "resourceType": "Procedure",
+  "id": "CMS68-patient-4-procedure-1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-procedurenotdone"
+    ]
+  },
+  "status": "not-done",
+  "statusReason": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "version": "2021-03",
+          "code": "407563006",
+          "display": "Treatment not tolerated (situation)"
+        }
+      ]
+    }
+  ],
+  "extension" : [
+    {
+      "url" : "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-recorded",
+      "valueDateTime" : "2020-04-04T04:00:00-07:00"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/CMS68-patient-4"
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "version": "2021-03",
+          "code": "428191000124101",
+          "display": "Documentation of current medications (procedure)"
+        }
+      ]
+    }
+  ],
+  "encounter": {
+    "reference": "Encounter/CMS68-patient-4-encounter-1"
+  }
+}

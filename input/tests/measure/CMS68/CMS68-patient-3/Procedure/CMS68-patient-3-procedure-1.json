@@ -1,0 +1,26 @@
+{
+  "resourceType": "Procedure",
+  "id": "CMS68-patient-3-procedure-1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-procedure"
+    ]
+  },
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/CMS68-patient-3"
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "version": "2021-03",
+          "code": "428191000124101",
+          "display": "Documentation of current medications (procedure)"
+        }
+      ]
+    }
+  ],
+  "performedDateTime": "2020-03-03T03:00:00-07:00"
+}

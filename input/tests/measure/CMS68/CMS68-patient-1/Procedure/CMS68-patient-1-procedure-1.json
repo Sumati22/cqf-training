@@ -1,0 +1,26 @@
+{
+  "resourceType": "Procedure",
+  "id": "CMS68-patient-1-procedure-1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-procedure"
+    ]
+  },
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/CMS68-patient-1"
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "359960003",
+          "display": "Ophthalmologic examination and evaluation under general anesthesia, limited (procedure)"
+        }
+      ]
+    }
+  ],
+  "performedDateTime": "2020-01-07T10:00:00-07:00"
+}

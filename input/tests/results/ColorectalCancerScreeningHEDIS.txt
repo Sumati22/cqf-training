@@ -9,3 +9,36 @@ Denominator Exclusion=false
 
 elapsed: 0.308 seconds
 
+Executing CQL...
+CQL path: /workspaces/cqf-training/input/cql
+No data found at /workspaces/cqf-training/input/tests. Evaluation may fail if data is required.
+Terminology path: /workspaces/cqf-training/input/vocabulary/valueset
+Patient=null
+Initial Population=null
+Denominator=null
+Numerator=false
+Denominator Exclusion=false
+
+
+Evaluation logs:
+18:45:40.904 [pool-2-thread-1] INFO  ca.uhn.fhir.util.VersionUtil - HAPI FHIR version 5.6.3 - Rev b54b29145c
+18:45:40.908 [pool-2-thread-1] INFO  ca.uhn.fhir.context.FhirContext - Creating new FHIR context for FHIR version [R4]
+18:45:41.748 [pool-2-thread-1] INFO  ca.uhn.fhir.util.XmlUtil - Unable to determine StAX implementation: java.xml/META-INF/MANIFEST.MF not found
+18:45:42.446 [pool-2-thread-1] INFO  c.u.f.c.support.DefaultProfileValidationSupport - Loading structure definitions from classpath: /org/hl7/fhir/r4/model/profile/profiles-resources.xml
+18:45:43.418 [pool-2-thread-1] INFO  c.u.f.c.support.DefaultProfileValidationSupport - Loading structure definitions from classpath: /org/hl7/fhir/r4/model/profile/profiles-types.xml
+18:45:43.472 [pool-2-thread-1] INFO  c.u.f.c.support.DefaultProfileValidationSupport - Loading structure definitions from classpath: /org/hl7/fhir/r4/model/profile/profiles-others.xml
+18:45:43.717 [pool-2-thread-1] INFO  c.u.f.c.support.DefaultProfileValidationSupport - Loading structure definitions from classpath: /org/hl7/fhir/r4/model/extension/extension-definitions.xml
+18:45:43.902 [pool-2-thread-1] INFO  ca.uhn.fhir.context.FhirContext - Creating new FHIR context for FHIR version [R4]
+18:45:45.248 [pool-2-thread-1] INFO  o.o.c.c.e.engine.retrieve.NoOpRetrieveProvider - Attempted retrieve of Patient. Returning empty set.
+18:45:45.262 [pool-2-thread-1] INFO  o.o.c.c.e.engine.retrieve.NoOpRetrieveProvider - Attempted retrieve of Observation. Returning empty set.
+18:45:45.264 [pool-2-thread-1] INFO  o.o.c.c.e.engine.retrieve.NoOpRetrieveProvider - Attempted retrieve of Observation. Returning empty set.
+18:45:45.264 [pool-2-thread-1] INFO  o.o.c.c.e.engine.retrieve.NoOpRetrieveProvider - Attempted retrieve of Procedure. Returning empty set.
+18:45:45.264 [pool-2-thread-1] INFO  o.o.c.c.e.engine.retrieve.NoOpRetrieveProvider - Attempted retrieve of Procedure. Returning empty set.
+18:45:45.264 [pool-2-thread-1] INFO  o.o.c.c.e.engine.retrieve.NoOpRetrieveProvider - Attempted retrieve of Procedure. Returning empty set.
+18:45:45.264 [pool-2-thread-1] INFO  o.o.c.c.e.engine.retrieve.NoOpRetrieveProvider - Attempted retrieve of Condition. Returning empty set.
+18:45:45.265 [pool-2-thread-1] INFO  o.o.c.c.e.engine.retrieve.NoOpRetrieveProvider - Attempted retrieve of Condition. Returning empty set.
+18:45:45.265 [pool-2-thread-1] INFO  o.o.c.c.e.engine.retrieve.NoOpRetrieveProvider - Attempted retrieve of Condition. Returning empty set.
+18:45:45.265 [pool-2-thread-1] INFO  o.o.c.c.e.engine.retrieve.NoOpRetrieveProvider - Attempted retrieve of Procedure. Returning empty set.
+18:45:45.266 [pool-2-thread-1] INFO  o.o.c.c.e.engine.retrieve.NoOpRetrieveProvider - Attempted retrieve of Condition. Returning empty set.
+elapsed: 4.519 seconds
+

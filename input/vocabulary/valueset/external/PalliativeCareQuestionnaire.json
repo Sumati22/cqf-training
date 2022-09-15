@@ -1,0 +1,44 @@
+{
+  "resourceType": "ValueSet",
+  "id": "PalliativeCareQuestionnaire",
+  "meta": {
+    "profile": [ "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablevalueset" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueString": "executable"
+  }, {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueString": "executable"
+  } ],
+  "url": "http://content.alphora.com/fhir/dqm/ValueSet/PalliativeCareQuestionnaire",
+  "name": "PalliativeCareQuestionnaire",
+  "title": "Palliative Care Questionnaire LOINC",
+  "status": "active",
+  "experimental": false,
+  "publisher": "Alphora",
+  "description": "Codes represeting possible values for LOINC Palliative Care Questionnaire",
+  "compose": {
+    "include": [ {
+      "system": "http://content.alphora.com/fhir/dqm/ValueSet/PalliativeCareQuestionnaire",
+      "version": "2.50",
+      "concept": [ {
+        "code": "71007-9",
+        "display": "Functional Assessment of Chronic Illness Therapy - Palliative Care Questionnaire (FACIT-Pal)"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "timestamp": "2022-01-10T13:49:32-08:00",
+    "parameter": [ {
+      "name": "naive",
+      "valueBoolean": true
+    } ],
+    "contains": [ {
+      "system": "http://content.alphora.com/fhir/dqm/ValueSet/PalliativeCareQuestionnaire",
+      "version": "2.50",
+      "code": "71007-9",
+      "display": "Functional Assessment of Chronic Illness Therapy - Palliative Care Questionnaire (FACIT-Pal)"
+    } ]
+  }
+}

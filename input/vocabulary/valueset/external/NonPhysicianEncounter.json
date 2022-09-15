@@ -1,0 +1,45 @@
+{
+  "resourceType": "ValueSet",
+  "id": "NonPhysicianEncounter",
+  "meta": {
+    "profile": [ "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablevalueset" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueString": "executable"
+  }, {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueString": "executable"
+  } ],
+  "url": "http://content.alphora.com/fhir/dqm/ValueSet/NonPhysicianEncounter",
+  "name": "NonPhysicianEncounter",
+  "title": "Non Physician Encounter",
+  "status": "active",
+  "experimental": false,
+  "publisher": "Alphora",
+  "description": "Codes representing possible values for encounters where the presence of physician or qualified healthcare provider may not be necessary",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "version": "2021",
+      "concept": [ {
+        "code": "99211",
+        "display": "Office or other outpatient visit for the evaluation and management of an established patient, that may not require the presence of a physician or other qualified health care professional. Usually, the presenting problem(s) are minimal"
+      } ]
+    } ]
+  },
+  "expansion": {
+    "timestamp": "2022-01-10T13:49:32-08:00",
+    "parameter": [ {
+      "name": "naive",
+      "valueBoolean": true
+    } ],
+    "contains": [ {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "version": "2021",
+      "code": "99211",
+      "display": "Office or other outpatient visit for the evaluation and management of an established patient, that may not require the presence of a physician or other qualified health care professional. Usually, the presenting problem(s) are minimal"
+    } ]
+  }
+}

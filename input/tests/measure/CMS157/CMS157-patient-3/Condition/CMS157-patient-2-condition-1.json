@@ -1,0 +1,50 @@
+{
+    "resourceType": "Condition",
+    "id": "CMS157-patient-3-condition-1",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition"
+        ]
+    },
+    "clinicalStatus": [{
+        "coding": [
+{
+    "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+    "code": "active",
+    "display": "Active"
+}
+        ]
+    }],
+    "verificationStatus": [{
+        "coding": [
+{
+    "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+    "code": "confirmed",
+    "display": "Confirmed"
+}
+        ]
+    }],
+    "category": [{
+        "coding": [
+{
+    "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+    "code": "encounter-diagnosis",
+    "display": "Encounter-Diagnosis"
+}
+        ]
+    }],
+    "code": [{
+        "coding": [
+{
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2021",
+      "code": "C44.1091",
+      "display": "Unspecified malignant neoplasm of skin of left upper eyelid, including canthus"
+}
+        ]
+    }],
+    "subject": {
+        "reference": "Patient/CMS157-patient-3"
+    },
+    "onsetDateTime": "2019-04-15T10:30:00-07:00"
+}

@@ -1,0 +1,77 @@
+Executing CQL...
+CQL path: /workspaces/cqf-training/input/cql
+Data path: /workspaces/cqf-training/input/tests/measure/CMS157
+Terminology path: /workspaces/cqf-training/input/vocabulary/valueset
+Patient=Patient(id=CMS157-patient-1)
+Patient Has Cancer=[]
+
+Patient=Patient(id=CMS157-patient-2)
+Patient Has Cancer=[]
+
+
+Evaluation logs:
+20:18:12.969 [pool-2-thread-1] INFO  ca.uhn.fhir.context.FhirContext - Creating new FHIR context for FHIR version [R4]
+20:18:13.174 [pool-2-thread-1] INFO  c.u.f.c.support.DefaultProfileValidationSupport - Loading structure definitions from classpath: /org/hl7/fhir/r4/model/profile/profiles-resources.xml
+20:18:13.663 [pool-2-thread-1] INFO  c.u.f.c.support.DefaultProfileValidationSupport - Loading structure definitions from classpath: /org/hl7/fhir/r4/model/profile/profiles-types.xml
+20:18:13.698 [pool-2-thread-1] INFO  c.u.f.c.support.DefaultProfileValidationSupport - Loading structure definitions from classpath: /org/hl7/fhir/r4/model/profile/profiles-others.xml
+20:18:13.852 [pool-2-thread-1] INFO  c.u.f.c.support.DefaultProfileValidationSupport - Loading structure definitions from classpath: /org/hl7/fhir/r4/model/extension/extension-definitions.xml
+20:18:14.129 [pool-2-thread-1] WARN  o.opencds.cqf.cql.evaluator.fhir.DirectoryBundler - Error parsing resource /workspaces/cqf-training/input/tests/measure/CMS157/CMS157-patient-2/Condition/CMS157-patient-2-condition-1.json: Unknown resource type 'condition': Resource names are case sensitive, found similar name: 'Condition'
+elapsed: 1.267 seconds
+
+Executing CQL...
+CQL path: /workspaces/cqf-training/input/cql
+Data path: /workspaces/cqf-training/input/tests/measure/CMS157
+Terminology path: /workspaces/cqf-training/input/vocabulary/valueset
+Patient=Patient(id=CMS157-patient-1)
+Patient Has Cancer=[]
+
+Patient=Patient(id=CMS157-patient-2)
+Patient Has Cancer=
+
+
+Evaluation logs:
+20:19:23.854 [pool-2-thread-1] INFO  ca.uhn.fhir.context.FhirContext - Creating new FHIR context for FHIR version [R4]
+20:19:24.068 [pool-2-thread-1] INFO  c.u.f.c.support.DefaultProfileValidationSupport - Loading structure definitions from classpath: /org/hl7/fhir/r4/model/profile/profiles-resources.xml
+20:19:24.596 [pool-2-thread-1] INFO  c.u.f.c.support.DefaultProfileValidationSupport - Loading structure definitions from classpath: /org/hl7/fhir/r4/model/profile/profiles-types.xml
+20:19:24.643 [pool-2-thread-1] INFO  c.u.f.c.support.DefaultProfileValidationSupport - Loading structure definitions from classpath: /org/hl7/fhir/r4/model/profile/profiles-others.xml
+20:19:24.774 [pool-2-thread-1] INFO  c.u.f.c.support.DefaultProfileValidationSupport - Loading structure definitions from classpath: /org/hl7/fhir/r4/model/extension/extension-definitions.xml
+20:19:25.183 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-observation-value-codes is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+20:19:25.183 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-smoking-status-observation-codes is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+20:19:25.184 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-careteam-provider-roles is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+20:19:25.184 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://utah.edu/fhir/lcs-cds/ValueSet/conditionclinical is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+20:19:25.185 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/detailed-race is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+20:19:25.186 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-diagnosticreport-category is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+20:19:25.186 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+20:19:25.187 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-diagnosticreport-report-and-note-codes is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+20:19:25.187 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-provider-specialty is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+20:19:25.187 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-provenance-participant-type is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+20:19:25.187 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/simple-language is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+20:19:25.187 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-observation-smoking-status-status is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+20:19:25.188 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - Codes expanded without a terminology server, some results may not be correct.
+20:19:25.195 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/birthsex is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+20:19:25.195 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://fhir.org/guides/cqf/common/ValueSet/inactive-condition is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+20:19:25.195 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - Codes expanded without a terminology server, some results may not be correct.
+20:19:25.196 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-ndc-vaccine-codes is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+20:19:25.197 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-observation-smokingstatus is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+20:19:25.197 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-encounter-type is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+20:19:25.197 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-vaccines-cvx is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+20:19:25.197 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1116.89 is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+20:19:25.198 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+20:19:25.198 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-condition-category is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+20:19:25.198 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/detailed-ethnicity is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+20:19:25.199 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-allergy-substance is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+20:19:25.199 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-note-type is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+20:19:25.199 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-documentreference-category is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+20:19:25.200 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity-category is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+20:19:25.202 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://fhir.org/guides/cqf/common/ValueSet/active-condition is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+20:19:25.202 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-diagnosticreport-lab-codes is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+20:19:25.206 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-procedure-icd10pcs is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+20:19:25.207 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+20:19:25.207 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-usps-state is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+20:19:25.207 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/omb-race-category is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+20:19:25.207 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-procedure-code is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+20:19:25.217 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-narrative-status is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+20:19:25.217 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-documentreference-type is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+20:19:25.218 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://utah.edu/fhir/lcs-cds/ValueSet/currentsmoker is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+elapsed: 1.386 seconds
+

@@ -1,0 +1,110 @@
+Executing CQL...
+CQL path: /workspaces/cqf-training/input/cql
+Data path: /workspaces/cqf-training/input/tests/measure/CMS68
+Terminology path: /workspaces/cqf-training/input/vocabulary/valueset
+Patient=Patient(id=CMS68-patient-1)
+SDE Sex=Code { code: M, system: http://hl7.org/fhir/v3/AdministrativeGender, version: null, display: Male }
+SDE Race=[Code { code: 2106-3, system: http://terminology.hl7.org/CodeSystem/PHRaceAndEthnicityCDC, version: null, display: White }, Code { code: 1002-5, system: http://terminology.hl7.org/CodeSystem/PHRaceAndEthnicityCDC, version: null, display: American Indian or Alaska Native }, Code { code: 2028-9, system: http://terminology.hl7.org/CodeSystem/PHRaceAndEthnicityCDC, version: null, display: Asian }, Code { code: 1586-7, system: http://terminology.hl7.org/CodeSystem/PHRaceAndEthnicityCDC, version: null, display: Shoshone }, Code { code: 2036-2, system: http://terminology.hl7.org/CodeSystem/PHRaceAndEthnicityCDC, version: null, display: Filipino }]
+SDE Ethnicity=[Code { code: 2135-2, system: http://terminology.hl7.org/CodeSystem/PHRaceAndEthnicityCDC, version: null, display: Hispanic or Latino }, Code { code: 2184-0, system: http://terminology.hl7.org/CodeSystem/PHRaceAndEthnicityCDC, version: null, display: Dominican }, Code { code: 2148-5, system: http://terminology.hl7.org/CodeSystem/PHRaceAndEthnicityCDC, version: null, display: Mexican }]
+SDE Payer=[Code { code: 31, system: https://nahdo.org/sopt, version: 9.2, display: Department of Defense }]
+Qualifying Encounters During Measurement Period=[Encounter(id=CMS68-patient-1-encounter-1)]
+Patient Age 18 or Older at Start of Measurement Period=false
+Initial Population=false
+Denominator=false
+Medications Documented During Qualifying Encounter=[]
+Numerator=false
+Medications Not Documented for Medical Reason=[]
+Denominator Exception=false
+
+Patient=Patient(id=CMS68-patient-2)
+SDE Sex=Code { code: F, system: http://hl7.org/fhir/v3/AdministrativeGender, version: null, display: Female }
+SDE Race=[Code { code: 2106-3, system: http://terminology.hl7.org/CodeSystem/PHRaceAndEthnicityCDC, version: null, display: White }, Code { code: 1002-5, system: http://terminology.hl7.org/CodeSystem/PHRaceAndEthnicityCDC, version: null, display: American Indian or Alaska Native }, Code { code: 2028-9, system: http://terminology.hl7.org/CodeSystem/PHRaceAndEthnicityCDC, version: null, display: Asian }, Code { code: 1586-7, system: http://terminology.hl7.org/CodeSystem/PHRaceAndEthnicityCDC, version: null, display: Shoshone }, Code { code: 2036-2, system: http://terminology.hl7.org/CodeSystem/PHRaceAndEthnicityCDC, version: null, display: Filipino }]
+SDE Ethnicity=[Code { code: 2135-2, system: http://terminology.hl7.org/CodeSystem/PHRaceAndEthnicityCDC, version: null, display: Hispanic or Latino }, Code { code: 2184-0, system: http://terminology.hl7.org/CodeSystem/PHRaceAndEthnicityCDC, version: null, display: Dominican }, Code { code: 2148-5, system: http://terminology.hl7.org/CodeSystem/PHRaceAndEthnicityCDC, version: null, display: Mexican }]
+SDE Payer=[Code { code: 111, system: https://nahdo.org/sopt, version: 9.2, display: Medicare HMO }]
+Qualifying Encounters During Measurement Period=[Encounter(id=CMS68-patient-2-encounter-1)]
+Patient Age 18 or Older at Start of Measurement Period=true
+Initial Population=true
+Denominator=true
+Medications Documented During Qualifying Encounter=[]
+Numerator=false
+Medications Not Documented for Medical Reason=[]
+Denominator Exception=false
+
+Patient=Patient(id=CMS68-patient-3)
+SDE Sex=Code { code: F, system: http://hl7.org/fhir/v3/AdministrativeGender, version: null, display: Female }
+SDE Race=[Code { code: 2106-3, system: http://terminology.hl7.org/CodeSystem/PHRaceAndEthnicityCDC, version: null, display: White }, Code { code: 1002-5, system: http://terminology.hl7.org/CodeSystem/PHRaceAndEthnicityCDC, version: null, display: American Indian or Alaska Native }, Code { code: 2028-9, system: http://terminology.hl7.org/CodeSystem/PHRaceAndEthnicityCDC, version: null, display: Asian }, Code { code: 1586-7, system: http://terminology.hl7.org/CodeSystem/PHRaceAndEthnicityCDC, version: null, display: Shoshone }, Code { code: 2036-2, system: http://terminology.hl7.org/CodeSystem/PHRaceAndEthnicityCDC, version: null, display: Filipino }]
+SDE Ethnicity=[Code { code: 2135-2, system: http://terminology.hl7.org/CodeSystem/PHRaceAndEthnicityCDC, version: null, display: Hispanic or Latino }, Code { code: 2184-0, system: http://terminology.hl7.org/CodeSystem/PHRaceAndEthnicityCDC, version: null, display: Dominican }, Code { code: 2148-5, system: http://terminology.hl7.org/CodeSystem/PHRaceAndEthnicityCDC, version: null, display: Mexican }]
+SDE Payer=[Code { code: 3113, system: https://nahdo.org/sopt, version: 9.2, display: TRICARE Standard - Fee For Service }]
+Qualifying Encounters During Measurement Period=[Encounter(id=CMS68-patient-3-encounter-1)]
+Patient Age 18 or Older at Start of Measurement Period=true
+Initial Population=true
+Denominator=true
+Medications Documented During Qualifying Encounter=[Procedure(id=CMS68-patient-3-procedure-1)]
+Numerator=true
+Medications Not Documented for Medical Reason=[]
+Denominator Exception=false
+
+Patient=Patient(id=CMS68-patient-4)
+SDE Sex=Code { code: M, system: http://hl7.org/fhir/v3/AdministrativeGender, version: null, display: Male }
+SDE Race=[Code { code: 2106-3, system: http://terminology.hl7.org/CodeSystem/PHRaceAndEthnicityCDC, version: null, display: White }, Code { code: 1002-5, system: http://terminology.hl7.org/CodeSystem/PHRaceAndEthnicityCDC, version: null, display: American Indian or Alaska Native }, Code { code: 2028-9, system: http://terminology.hl7.org/CodeSystem/PHRaceAndEthnicityCDC, version: null, display: Asian }, Code { code: 1586-7, system: http://terminology.hl7.org/CodeSystem/PHRaceAndEthnicityCDC, version: null, display: Shoshone }, Code { code: 2036-2, system: http://terminology.hl7.org/CodeSystem/PHRaceAndEthnicityCDC, version: null, display: Filipino }]
+SDE Ethnicity=[Code { code: 2135-2, system: http://terminology.hl7.org/CodeSystem/PHRaceAndEthnicityCDC, version: null, display: Hispanic or Latino }, Code { code: 2184-0, system: http://terminology.hl7.org/CodeSystem/PHRaceAndEthnicityCDC, version: null, display: Dominican }, Code { code: 2148-5, system: http://terminology.hl7.org/CodeSystem/PHRaceAndEthnicityCDC, version: null, display: Mexican }]
+SDE Payer=[Code { code: 11, system: https://nahdo.org/sopt, version: 9.2, display: Medicare Managed Care (Includes Medicare Advantage Plans) }]
+Qualifying Encounters During Measurement Period=[Encounter(id=CMS68-patient-4-encounter-1)]
+Patient Age 18 or Older at Start of Measurement Period=true
+Initial Population=true
+Denominator=true
+Medications Documented During Qualifying Encounter=[]
+Numerator=false
+Medications Not Documented for Medical Reason=[Procedure(id=CMS68-patient-4-procedure-1)]
+Denominator Exception=true
+
+
+Evaluation logs:
+17:59:50.423 [pool-2-thread-1] INFO  ca.uhn.fhir.util.VersionUtil - HAPI FHIR version 5.6.3 - Rev b54b29145c
+17:59:50.429 [pool-2-thread-1] INFO  ca.uhn.fhir.context.FhirContext - Creating new FHIR context for FHIR version [R4]
+17:59:51.477 [pool-2-thread-1] INFO  ca.uhn.fhir.util.XmlUtil - Unable to determine StAX implementation: java.xml/META-INF/MANIFEST.MF not found
+17:59:52.309 [pool-2-thread-1] INFO  c.u.f.c.support.DefaultProfileValidationSupport - Loading structure definitions from classpath: /org/hl7/fhir/r4/model/profile/profiles-resources.xml
+17:59:53.041 [pool-2-thread-1] INFO  c.u.f.c.support.DefaultProfileValidationSupport - Loading structure definitions from classpath: /org/hl7/fhir/r4/model/profile/profiles-types.xml
+17:59:53.086 [pool-2-thread-1] INFO  c.u.f.c.support.DefaultProfileValidationSupport - Loading structure definitions from classpath: /org/hl7/fhir/r4/model/profile/profiles-others.xml
+17:59:53.311 [pool-2-thread-1] INFO  c.u.f.c.support.DefaultProfileValidationSupport - Loading structure definitions from classpath: /org/hl7/fhir/r4/model/extension/extension-definitions.xml
+17:59:53.506 [pool-2-thread-1] INFO  ca.uhn.fhir.context.FhirContext - Creating new FHIR context for FHIR version [R4]
+17:59:54.976 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-observation-value-codes is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+17:59:54.976 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-smoking-status-observation-codes is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+17:59:54.976 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-careteam-provider-roles is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+17:59:54.977 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://utah.edu/fhir/lcs-cds/ValueSet/conditionclinical is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+17:59:54.978 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/detailed-race is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+17:59:54.979 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-diagnosticreport-category is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+17:59:54.979 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+17:59:54.980 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-diagnosticreport-report-and-note-codes is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+17:59:54.980 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-provider-specialty is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+17:59:54.980 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-provenance-participant-type is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+17:59:54.980 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/simple-language is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+17:59:54.980 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-observation-smoking-status-status is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+17:59:54.981 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - Codes expanded without a terminology server, some results may not be correct.
+17:59:54.988 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/birthsex is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+17:59:54.988 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://fhir.org/guides/cqf/common/ValueSet/inactive-condition is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+17:59:54.988 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - Codes expanded without a terminology server, some results may not be correct.
+17:59:54.989 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-ndc-vaccine-codes is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+17:59:54.990 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-observation-smokingstatus is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+17:59:54.990 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-encounter-type is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+17:59:54.990 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-vaccines-cvx is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+17:59:54.990 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1116.89 is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+17:59:54.991 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+17:59:54.992 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-condition-category is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+17:59:54.992 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/detailed-ethnicity is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+17:59:54.992 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-allergy-substance is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+17:59:54.992 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-note-type is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+17:59:54.993 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-documentreference-category is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+17:59:54.993 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity-category is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+17:59:54.995 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://fhir.org/guides/cqf/common/ValueSet/active-condition is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+17:59:54.996 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-diagnosticreport-lab-codes is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+17:59:55.003 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-procedure-icd10pcs is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+17:59:55.003 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+17:59:55.003 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-usps-state is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+17:59:55.003 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/omb-race-category is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+17:59:55.004 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-procedure-code is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+17:59:55.015 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-narrative-status is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+17:59:55.016 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-documentreference-type is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+17:59:55.016 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://utah.edu/fhir/lcs-cds/ValueSet/currentsmoker is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+elapsed: 5.307 seconds
+

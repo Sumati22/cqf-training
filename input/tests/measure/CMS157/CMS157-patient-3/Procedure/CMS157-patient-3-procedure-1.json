@@ -1,0 +1,25 @@
+{
+    "resourceType": "Procedure",
+    "id": "CMS157-patient-3-procedure-1",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-procedure"
+        ]
+    },
+    "status": "completed",
+    "subject": {
+        "reference": "Patient/CMS157-patient-3"
+    },
+    "performedDateTime": "2019-03-15T10:30:00-07:00",
+    "code": [{
+        "coding": [
+{
+    "system": "http://www.ama-assn.org/go/cpt",
+    "version": "2021",
+    "code": "96413",
+    "display": "Chemotherapy administration, intravenous infusion technique; up to 1 hour, single or initial substance/drug"
+}
+        ]
+    }]
+
+}

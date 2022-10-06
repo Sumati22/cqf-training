@@ -1,6 +1,6 @@
 {
     "resourceType": "Condition",
-    "id": "CMS157-patient-4-condition-1",
+    "id": "CMS157-patient-6-condition-1",
     "meta": {
         "profile": [
             "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition"
@@ -44,7 +44,7 @@
         ]
     }],
     "subject": {
-        "reference": "Patient/CMS157-patient-3"
+        "reference": "Patient/CMS157-patient-6"
     },
-    "onsetDateTime": "2016-04-15T10:30:00-07:00"
+    "onsetDateTime": "2017-09-12T10:30:00-07:00"
 }

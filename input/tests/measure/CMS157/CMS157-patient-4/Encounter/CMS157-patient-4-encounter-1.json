@@ -22,7 +22,7 @@
         ]
     }],
     "subject": {
-        "reference": "Patient/CMS157-patient-3"
+        "reference": "Patient/CMS157-patient-4"
     },
     "period": {
         "start": "2019-02-01T10:00:00-07:00",

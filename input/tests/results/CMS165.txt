@@ -1,12 +1,192 @@
 Executing CQL...
-CQL path: /Applications/Alphora/cqf-training/input/cql
-Data path: /Applications/Alphora/cqf-training/input/tests/measure/CMS165
-Terminology path: /Applications/Alphora/cqf-training/input/vocabulary/valueset
+CQL path: /Users/justinmckelvy/Alphora/cqf-training/input/cql
+Data path: /Users/justinmckelvy/Alphora/cqf-training/input/tests/measure/CMS165
+Terminology path: /Users/justinmckelvy/Alphora/cqf-training/input/vocabulary/valueset
+
+Evaluation logs:
+11:50:22.590 [pool-2-thread-1] INFO  ca.uhn.fhir.context.FhirContext - Creating new FHIR context for FHIR version [R4]
+11:50:22.853 [pool-2-thread-1] INFO  c.u.f.c.support.DefaultProfileValidationSupport - Loading structure definitions from classpath: /org/hl7/fhir/r4/model/profile/profiles-resources.xml
+11:50:23.238 [pool-2-thread-1] INFO  c.u.f.c.support.DefaultProfileValidationSupport - Loading structure definitions from classpath: /org/hl7/fhir/r4/model/profile/profiles-types.xml
+11:50:23.268 [pool-2-thread-1] INFO  c.u.f.c.support.DefaultProfileValidationSupport - Loading structure definitions from classpath: /org/hl7/fhir/r4/model/profile/profiles-others.xml
+11:50:23.379 [pool-2-thread-1] INFO  c.u.f.c.support.DefaultProfileValidationSupport - Loading structure definitions from classpath: /org/hl7/fhir/r4/model/extension/extension-definitions.xml
+org.opencds.cqf.cql.engine.exception.CqlException: Translation of library CMS165 failed with the following message: Could not resolve identifier Preventative Care Services- Established Office VIsit- 18 and Up in library CMSConcepts.
+	at org.opencds.cqf.cql.evaluator.engine.execution.TranslatingLibraryLoader.translate(TranslatingLibraryLoader.java:134)
+	at org.opencds.cqf.cql.evaluator.engine.execution.TranslatingLibraryLoader.load(TranslatingLibraryLoader.java:78)
+	at org.opencds.cqf.cql.evaluator.engine.execution.CacheAwareLibraryLoaderDecorator.load(CacheAwareLibraryLoaderDecorator.java:49)
+	at org.opencds.cqf.cql.engine.execution.CqlEngine.loadAndValidate(CqlEngine.java:251)
+	at org.opencds.cqf.cql.engine.execution.CqlEngine.evaluate(CqlEngine.java:154)
+	at org.opencds.cqf.cql.evaluator.CqlEvaluator.evaluate(CqlEvaluator.java:89)
+	at org.opencds.cqf.cql.evaluator.CqlEvaluator.evaluate(CqlEvaluator.java:76)
+	at org.opencds.cqf.cql.evaluator.cli.command.CqlCommand.call(CqlCommand.java:159)
+	at org.opencds.cqf.cql.evaluator.cli.command.CqlCommand.call(CqlCommand.java:33)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:1953)
+	at picocli.CommandLine.access$1300(CommandLine.java:145)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2352)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2346)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2311)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2179)
+	at picocli.CommandLine.execute(CommandLine.java:2078)
+	at org.opencds.cqf.cql.evaluator.cli.Main.run(Main.java:19)
+	at org.opencds.cqf.cql.ls.server.command.DebugCqlCommandContribution.executeCql(DebugCqlCommandContribution.java:36)
+	at org.opencds.cqf.cql.ls.server.command.DebugCqlCommandContribution.executeCommand(DebugCqlCommandContribution.java:61)
+	at org.opencds.cqf.cql.ls.server.service.CqlWorkspaceService.executeCommandFromContributions(CqlWorkspaceService.java:165)
+	at org.opencds.cqf.cql.ls.server.service.CqlWorkspaceService.executeCommand(CqlWorkspaceService.java:110)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+elapsed: 1.018 seconds
+
 Executing CQL...
-CQL path: /Applications/Alphora/cqf-training/input/cql
-Data path: /Applications/Alphora/cqf-training/input/tests/measure/CMS165
-Terminology path: /Applications/Alphora/cqf-training/input/vocabulary/valueset
-Executing CQL...
-CQL path: /Applications/Alphora/cqf-training/input/cql
-Data path: /Applications/Alphora/cqf-training/input/tests/measure/CMS165
-Terminology path: /Applications/Alphora/cqf-training/input/vocabulary/valueset
+CQL path: /Users/justinmckelvy/Alphora/cqf-training/input/cql
+Data path: /Users/justinmckelvy/Alphora/cqf-training/input/tests/measure/CMS165
+Terminology path: /Users/justinmckelvy/Alphora/cqf-training/input/vocabulary/valueset
+Patient=Patient(id=CMS165-patient-1)
+Essential Hypertension Diagnosis=[]
+Patient age between 18 and 85=true
+Adult Outpatient Encounter=[]
+
+Patient=Patient(id=CMS165-patient-10)
+Essential Hypertension Diagnosis=[Condition(id=CMS165-patient-10-condition-1)]
+Patient age between 18 and 85=true
+Adult Outpatient Encounter=[Encounter(id=CMS165-patient-10-encounter-1)]
+
+Patient=Patient(id=CMS165-patient-11)
+Essential Hypertension Diagnosis=[Condition(id=CMS165-patient-11-condition-1)]
+Patient age between 18 and 85=true
+Adult Outpatient Encounter=[Encounter(id=CMS165-patient-11-encounter-1)]
+
+Patient=Patient(id=CMS165-patient-12)
+Essential Hypertension Diagnosis=[Condition(id=CMS165-patient-12-condition-1)]
+Patient age between 18 and 85=true
+Adult Outpatient Encounter=[Encounter(id=CMS165-patient-12-encounter-1)]
+
+Patient=Patient(id=CMS165-patient-13)
+Essential Hypertension Diagnosis=[Condition(id=CMS165-patient-13-condition-1)]
+Patient age between 18 and 85=true
+Adult Outpatient Encounter=[Encounter(id=CMS165-patient-13-encounter-1)]
+
+Patient=Patient(id=CMS165-patient-14)
+Essential Hypertension Diagnosis=[Condition(id=CMS165-patient-14-condition-1)]
+Patient age between 18 and 85=true
+Adult Outpatient Encounter=[Encounter(id=CMS165-patient-14-encounter-1)]
+
+Patient=Patient(id=CMS165-patient-15)
+Essential Hypertension Diagnosis=[Condition(id=CMS165-patient-15-condition-1)]
+Patient age between 18 and 85=true
+Adult Outpatient Encounter=[Encounter(id=CMS165-patient-15-encounter-1)]
+
+Patient=Patient(id=CMS165-patient-16)
+Essential Hypertension Diagnosis=[Condition(id=CMS165-patient-16-condition-1)]
+Patient age between 18 and 85=true
+Adult Outpatient Encounter=[Encounter(id=CMS165-patient-16-encounter-1)]
+
+Patient=Patient(id=CMS165-patient-17)
+Essential Hypertension Diagnosis=[Condition(id=CMS165-patient-17-condition-1)]
+Patient age between 18 and 85=true
+Adult Outpatient Encounter=[Encounter(id=CMS165-patient-17-encounter-1)]
+
+Patient=Patient(id=CMS165-patient-18)
+Essential Hypertension Diagnosis=[Condition(id=CMS165-patient-18-condition-1)]
+Patient age between 18 and 85=true
+Adult Outpatient Encounter=[Encounter(id=CMS165-patient-18-encounter-1)]
+
+Patient=Patient(id=CMS165-patient-2)
+Essential Hypertension Diagnosis=[Condition(id=CMS165-patient-2-condition-1)]
+Patient age between 18 and 85=true
+Adult Outpatient Encounter=[]
+
+Patient=Patient(id=CMS165-patient-3)
+Essential Hypertension Diagnosis=[Condition(id=CMS165-patient-3-condition-1)]
+Patient age between 18 and 85=true
+Adult Outpatient Encounter=[Encounter(id=CMS165-patient-3-encounter-1)]
+
+Patient=Patient(id=CMS165-patient-4)
+Essential Hypertension Diagnosis=[Condition(id=CMS165-patient-4-condition-1)]
+Patient age between 18 and 85=true
+Adult Outpatient Encounter=[Encounter(id=CMS165-patient-4-encounter-1)]
+
+Patient=Patient(id=CMS165-patient-5)
+Essential Hypertension Diagnosis=[Condition(id=CMS165-patient-5-condition-1)]
+Patient age between 18 and 85=true
+Adult Outpatient Encounter=[Encounter(id=CMS165-patient-5-encounter-1)]
+
+Patient=Patient(id=CMS165-patient-6)
+Essential Hypertension Diagnosis=[Condition(id=CMS165-patient-6-condition-1)]
+Patient age between 18 and 85=true
+Adult Outpatient Encounter=[Encounter(id=CMS165-patient-6-encounter-1)]
+
+Patient=Patient(id=CMS165-patient-7)
+Essential Hypertension Diagnosis=[Condition(id=CMS165-patient-7-condition-1)]
+Patient age between 18 and 85=true
+Adult Outpatient Encounter=[Encounter(id=CMS165-patient-7-encounter-1)]
+
+Patient=Patient(id=CMS165-patient-8)
+Essential Hypertension Diagnosis=[Condition(id=CMS165-patient-8-condition-1)]
+Patient age between 18 and 85=true
+Adult Outpatient Encounter=[Encounter(id=CMS165-patient-8-encounter-1), Encounter(id=CMS165-patient-8-encounter-3), Encounter(id=CMS165-patient-8-encounter-2)]
+
+Patient=Patient(id=CMS165-patient-9)
+Essential Hypertension Diagnosis=[Condition(id=CMS165-patient-9-condition-1)]
+Patient age between 18 and 85=true
+Adult Outpatient Encounter=[Encounter(id=CMS165-patient-9-encounter-1), Encounter(id=CMS165-patient-9-encounter-3), Encounter(id=CMS165-patient-9-encounter-2)]
+
+
+Evaluation logs:
+11:52:50.109 [pool-2-thread-1] INFO  ca.uhn.fhir.context.FhirContext - Creating new FHIR context for FHIR version [R4]
+11:52:50.406 [pool-2-thread-1] INFO  c.u.f.c.support.DefaultProfileValidationSupport - Loading structure definitions from classpath: /org/hl7/fhir/r4/model/profile/profiles-resources.xml
+11:52:50.895 [pool-2-thread-1] INFO  c.u.f.c.support.DefaultProfileValidationSupport - Loading structure definitions from classpath: /org/hl7/fhir/r4/model/profile/profiles-types.xml
+11:52:50.926 [pool-2-thread-1] INFO  c.u.f.c.support.DefaultProfileValidationSupport - Loading structure definitions from classpath: /org/hl7/fhir/r4/model/profile/profiles-others.xml
+11:52:51.039 [pool-2-thread-1] INFO  c.u.f.c.support.DefaultProfileValidationSupport - Loading structure definitions from classpath: /org/hl7/fhir/r4/model/extension/extension-definitions.xml
+11:52:51.499 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/detailed-ethnicity is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+11:52:51.500 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-narrative-status is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+11:52:51.500 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-provenance-participant-type is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+11:52:51.500 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-observation-smoking-status-status is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+11:52:51.500 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/detailed-race is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+11:52:51.500 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-procedure-code is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+11:52:51.500 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-documentreference-category is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+11:52:51.500 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://utah.edu/fhir/lcs-cds/ValueSet/currentsmoker is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+11:52:51.500 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+11:52:51.500 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1116.89 is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+11:52:51.500 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-allergy-substance is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+11:52:51.501 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - Codes expanded without a terminology server, some results may not be correct.
+11:52:51.505 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-observation-smokingstatus is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+11:52:51.506 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/birthsex is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+11:52:51.506 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-vaccines-cvx is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+11:52:51.506 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-encounter-type is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+11:52:51.506 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://fhir.org/guides/cqf/common/ValueSet/active-condition is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+11:52:51.506 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-procedure-icd10pcs is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+11:52:51.509 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-diagnosticreport-report-and-note-codes is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+11:52:51.510 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-ndc-vaccine-codes is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+11:52:51.511 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - Codes expanded without a terminology server, some results may not be correct.
+11:52:51.511 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-careteam-provider-roles is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+11:52:51.511 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity-category is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+11:52:51.512 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-observation-value-codes is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+11:52:51.513 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/simple-language is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+11:52:51.513 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+11:52:51.513 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-note-type is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+11:52:51.513 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/omb-race-category is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+11:52:51.513 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+11:52:51.514 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-documentreference-type is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+11:52:51.514 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-provider-specialty is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+11:52:51.514 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-diagnosticreport-category is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+11:52:51.515 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-diagnosticreport-lab-codes is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+11:52:51.515 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-condition-category is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+11:52:51.515 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://utah.edu/fhir/lcs-cds/ValueSet/conditionclinical is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+11:52:51.515 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-usps-state is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+11:52:51.515 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://fhir.org/guides/cqf/common/ValueSet/inactive-condition is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+11:52:51.515 [pool-2-thread-1] WARN  o.o.c.c.e.e.terminology.BundleTerminologyProvider - ValueSet http://hl7.org/fhir/us/core/ValueSet/us-core-smoking-status-observation-codes is not expanded. Falling back to compose definition. This will potentially produce incorrect results. 
+elapsed: 3.112 seconds
+

@@ -1,6 +1,6 @@
 {
   "resourceType": "Encounter",
-  "id": "CMS165-patient-2-encounter-2",
+  "id": "CMS165-patient-5-encounter-2",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter"

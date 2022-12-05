@@ -20,10 +20,10 @@ define "Initial Population":
 
 define "Denominator":
 "Initial Population" 
-
+/*
 define "Numerator":
   exists "Blood Pressure Under Control"
-
+/*
 define "Denominator Exclusion":
   exists "Has Hospice"
   or exists "Renal Disease Encounter" 
@@ -38,9 +38,18 @@ define "Denominator Exclusion":
   /* Initial Population */
 define "Essential Hypertension Diagnosis":
   (AC.QualifiedConditions([Condition: Cx."Essential Hypertension"])) EssentialHypertension 
-    where FC.ToPrevalenceInterval(EssentialHypertension) overlaps "Measurement Period"
+    where FC.ToPrevalenceInterval(EssentialHypertension) overlaps Interval[start of "Measurement Period", start of "Measurement Period" + 6 months) 
 
-Define "Patient age between 18 and 85" 
+define "Patient age between 18 and 85":
     AgeInYearsAt(start of "Measurement Period") in Interval[18, 85]
 
-Define "Adult Outpatient or Telehealth Encounter"
+define "Adult Outpatient Encounter":
+  (AC.QualifiedEncounters([Encounter: Cx."Office Visit"])
+  union (AC.QualifiedEncounters([Encounter: Cx."Annual Wellness Visit"]))
+  union (AC.QualifiedEncounters([Encounter: Cx."Preventative Care Services- Established Office VIsit- 18 and Up"]))
+  union (AC.QualifiedEncounters([Encounter: Cx."Preventative Care Services- Initial Office VIsit- 18 and Up"]))
+  union (AC.QualifiedEncounters([Encounter: Cx."Home Healthcare Services"]))
+  union (AC.QualifiedEncounters([Encounter: Cx."Telephone Visits"]))
+  union (AC.QualifiedEncounters([Encounter: Cx."Online Assessments"]))
+  ) OutpatientEncounter 
+  where OutpatientEncounter.period during "Measurement Period"

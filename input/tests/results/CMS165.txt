@@ -1,0 +1,12 @@
+Executing CQL...
+CQL path: /Applications/Alphora/cqf-training/input/cql
+Data path: /Applications/Alphora/cqf-training/input/tests/measure/CMS165
+Terminology path: /Applications/Alphora/cqf-training/input/vocabulary/valueset
+Executing CQL...
+CQL path: /Applications/Alphora/cqf-training/input/cql
+Data path: /Applications/Alphora/cqf-training/input/tests/measure/CMS165
+Terminology path: /Applications/Alphora/cqf-training/input/vocabulary/valueset
+Executing CQL...
+CQL path: /Applications/Alphora/cqf-training/input/cql
+Data path: /Applications/Alphora/cqf-training/input/tests/measure/CMS165
+Terminology path: /Applications/Alphora/cqf-training/input/vocabulary/valueset

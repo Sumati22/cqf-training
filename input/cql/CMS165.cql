@@ -13,15 +13,15 @@ parameter "Measurement Period" default Interval[@2019-01-01T00:00:00.000, @2019-
 context Patient
 
 /* Population Criteria */
-/*
+
 define "Initial Population":
     exists "Essential Hypertension Diagnosis"
-    //and "Adult Outpatient or Telehealth Encounter"
+    and exists "Adult Outpatient Encounter"
     and "Patient age between 18 and 85" 
 
 define "Denominator":
 "Initial Population" 
-*/
+
 /*
 define "Numerator":
   exists "Blood Pressure Under Control"

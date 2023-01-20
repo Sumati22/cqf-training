@@ -1,0 +1,144 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.3.88.12.80.62",
+  "meta": {
+    "profile": [ "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablevalueset", "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset", "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablevalueset" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode": "shareable"
+  }, {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode": "narrative"
+  }, {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode": "publishable"
+  }, {
+    "url": "http://fhir.org/guides/cdc/opioid-cds/StructureDefinition/cdc-valueset-inclusion",
+    "valueString": "Specific set of concepts selected"
+  }, {
+    "url": "http://fhir.org/guides/cdc/opioid-cds/StructureDefinition/cdc-valueset-exclusion",
+    "valueString": "None needed"
+  }, {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode": "executable"
+  }, {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode": "executable"
+  }, {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-usageWarning",
+    "valueString": "This value set contains a point-in-time expansion enumerating the codes that meet the value set intent. As new versions of the code systems used by the value set are released, the contents of this expansion will need to be updated to incorporate newly defined codes that meet the value set intent. Before, and periodically during production use, the value set expansion contents SHOULD be updated. The value set expansion specifies the timestamp when the expansion was produced, SHOULD contain the parameters used for the expansion, and SHALL contain the codes that are obtained by evaluating the value set definition. If this is ONLY an executable value set, a distributable definition of the value set must be obtained to compute the updated expansion."
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.62",
+  "version": "20210630",
+  "title": "Vital Sign Result Type",
+  "status": "active",
+  "experimental": false,
+  "publisher": "HL7 Terminology",
+  "description": "A clinical observation classified as a vital sign, optionally including a method",
+  "purpose": "observation",
+  "expansion": {
+    "timestamp": "2023-01-19T08:30:54-07:00",
+    "contains": [ {
+      "system": "http://loinc.org",
+      "version": "2.73",
+      "code": "2708-6",
+      "display": "Oxygen saturation in Arterial blood"
+    }, {
+      "system": "http://loinc.org",
+      "version": "2.73",
+      "code": "29463-7",
+      "display": "Body weight"
+    }, {
+      "system": "http://loinc.org",
+      "version": "2.73",
+      "code": "3140-1",
+      "display": "Body surface area Derived from formula"
+    }, {
+      "system": "http://loinc.org",
+      "version": "2.73",
+      "code": "3150-0",
+      "display": "Inhaled oxygen concentration"
+    }, {
+      "system": "http://loinc.org",
+      "version": "2.73",
+      "code": "3151-8",
+      "display": "Inhaled oxygen flow rate"
+    }, {
+      "system": "http://loinc.org",
+      "version": "2.73",
+      "code": "39156-5",
+      "display": "Body mass index (BMI) [Ratio]"
+    }, {
+      "system": "http://loinc.org",
+      "version": "2.73",
+      "code": "59408-5",
+      "display": "Oxygen saturation in Arterial blood by Pulse oximetry"
+    }, {
+      "system": "http://loinc.org",
+      "version": "2.73",
+      "code": "59575-1",
+      "display": "Body mass index (BMI) [Percentile] Per age"
+    }, {
+      "system": "http://loinc.org",
+      "version": "2.73",
+      "code": "59576-9",
+      "display": "Body mass index (BMI) [Percentile] Per age and sex"
+    }, {
+      "system": "http://loinc.org",
+      "version": "2.73",
+      "code": "77606-2",
+      "display": "Weight-for-length Per age and sex"
+    }, {
+      "system": "http://loinc.org",
+      "version": "2.73",
+      "code": "8287-5",
+      "display": "Head Occipital-frontal circumference by Tape measure"
+    }, {
+      "system": "http://loinc.org",
+      "version": "2.73",
+      "code": "8289-1",
+      "display": "Head Occipital-frontal circumference Percentile"
+    }, {
+      "system": "http://loinc.org",
+      "version": "2.73",
+      "code": "8302-2",
+      "display": "Body height"
+    }, {
+      "system": "http://loinc.org",
+      "version": "2.73",
+      "code": "8306-3",
+      "display": "Body height --lying"
+    }, {
+      "system": "http://loinc.org",
+      "version": "2.73",
+      "code": "8310-5",
+      "display": "Body temperature"
+    }, {
+      "system": "http://loinc.org",
+      "version": "2.73",
+      "code": "8462-4",
+      "display": "Diastolic blood pressure"
+    }, {
+      "system": "http://loinc.org",
+      "version": "2.73",
+      "code": "8480-6",
+      "display": "Systolic blood pressure"
+    }, {
+      "system": "http://loinc.org",
+      "version": "2.73",
+      "code": "8867-4",
+      "display": "Heart rate"
+    }, {
+      "system": "http://loinc.org",
+      "version": "2.73",
+      "code": "9279-1",
+      "display": "Respiratory rate"
+    }, {
+      "system": "http://loinc.org",
+      "version": "2.73",
+      "code": "9843-4",
+      "display": "Head Occipital-frontal circumference"
+    } ]
+  }
+}
